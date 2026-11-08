@@ -1,0 +1,11 @@
+# dsh-webdav-sync 注册层（loader patch）。
+# remoteUrl/username/password 也可以在插件的 config.json 里配置（用 dsh_sync_config 工具），
+# 这里只给初始占位，避免把凭据明文写进会被同步的 cordis.patch.yml。
+- insert:
+    - id: webdav-sync
+      name: dsh-webdav-sync
+      config:
+        remoteUrl: ''
+        username: ''
+        password: ''
+        scope: []
